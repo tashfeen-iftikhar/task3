@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="task3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <a href=""><img src="images/123-removebg-preview.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#about">About</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="about-content">
+            <!-- Left Side (Image) -->
+            <div class="about-image">
+                <img src="images/profile.jpeg" alt="Tashfeen Iftikhar">
+            </div>
+
+            <!-- Right Side (Text) -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! <span>I'm Tashfeen Iftikhar</span>, a passionate and detail-oriented Front-End Developer with a deep love for creating seamless and engaging user experiences. I specialize in building responsive, interactive, and visually appealing websites using the latest web technologies.
+                With a strong foundation in HTML, CSS, and JavaScript, I am proficient in turning design concepts into functional web pages that look great across devices. My goal is to create websites that are not only aesthetically pleasing but also highly functional and user-friendly.
+                When I'm not coding, you'll find me experimenting with new design ideas, solving problems, or collaborating on exciting projects. I believe in continuous learning and always look for ways to enhance my skills to stay ahead in the ever-evolving tech industry.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i> <!-- Add Font Awesome icons -->
+                    </div>
+                    <div class="skill-name">HTML & CSS</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i> <!-- Add Font Awesome icons -->
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i> <!-- Add Font Awesome icons -->
+                    </div>
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i> <!-- Add Font Awesome icons -->
+                    </div>
+                    <div class="skill-name">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+        
+        <!-- Image Gallery Card -->
+        <div class="project-card">
+            <div class="project-card-content">
+                <h3>Image Gallery</h3>
+                <p>Welcome to my Image Gallery, where you can explore a curated collection of my work and creative projects. This gallery showcases a range of images, including web designs, UI/UX prototypes, and personal photography, all created with an eye for detail and aesthetics. Whether you're here for design inspiration, browsing through my portfolio, or just enjoying the visuals, you'll find a variety of work that highlights my skills in front-end development, graphic design, and creative expression.</p>
+                <a href="Task 1 (Img Gallery).html" class="btn-view">View Project</a>
+            </div>
+        </div>
+
+        <!-- Simple Web-based Calculator Card -->
+        <div class="project-card">
+            <div class="project-card-content">
+                <h3>Simple Web-based Calculator</h3>
+                <p>This HTML Calculator is a user-friendly web application that allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division. Built using HTML, CSS, and JavaScript, the calculator features an intuitive and responsive interface, making it easy to use on both desktop and mobile devices.</p>
+                <a href="Task 2 (Calculator).html" class="btn-view">View Project</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>If you have any questions or want to get in touch, feel free to reach out via email or fill out the form below!</p>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <!-- Success Message (Initially Hidden) -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            Your message has been sent successfully!
+        </div>
+
+        <!-- Social Media Links (Optional) -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tashfeen-iftikhar-42aa48333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon">
+                <img src="images/1233.webp" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    // JavaScript to handle form submission and show success message
+
+// Wait for the DOM to load
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the form element
+    const form = document.getElementById('contactForm');
+    
+    // Add submit event listener to the form
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from reloading the page
+
+        // Show success message after submission
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+
+        // Optionally, clear the form fields (if you want)
+        form.reset();
+
+        // Hide the success message after 5 seconds
+        setTimeout(function() {
+            successMessage.style.display = 'none';
+        }, 5000);
+    });
+});
+
+</script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tashfeen Iftikhar</p>
+        </div>
+    </footer>
+</body>
+</html>

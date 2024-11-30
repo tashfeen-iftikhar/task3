@@ -1,0 +1,449 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #665f5f; /* Navbar color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav {
+    width: 100%;
+}
+
+header .logo {
+    width: 250px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #a29a92;
+    color: white;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Darker Heading Styling for Better Visibility */
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333; /* Darker shade for headings */
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Text Styling */
+p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Project Links Styling */
+.project a {
+    color: #333;
+    text-decoration: none;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* About Section Flexbox */
+.about-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* About Image Styling */
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+}
+
+/* About Text Styling */
+.about-text {
+    flex: 2;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center;
+    }
+
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Skills Section */
+#skills {
+    background-color: #665f5f; /* Set background color to match navbar */
+    padding: 50px 0;
+}
+
+#skills .container {
+    text-align: center;
+}
+
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #ffffff; /* Keep skill item background white */
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #665f5f; /* Use the same color as the navbar for icons */
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Add icon color hover effect */
+.skill-item:hover .skill-icon {
+    color: #333; /* Darker icon color on hover */
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9; /* Lighter background color for the project section */
+    padding: 50px 0;
+}
+
+#projects .container {
+    text-align: center;
+}
+
+/* Project Cards Layout */
+.project-card {
+    background-color: #ffffff; /* Lighter card background */
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333; /* Darker heading color for project cards */
+    margin-bottom: 15px;
+}
+
+.project-card-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card-content .btn-view {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #665f5f; /* Match navbar color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.project-card-content .btn-view:hover {
+    background-color: #a29a92; /* Lighter shade on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-card-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9; /* Light background for contact */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #665f5f;
+}
+
+.btn-submit {
+    background-color: #665f5f; /* Match navbar color */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #a29a92;
+}
+
+/* Success Message Styling */
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+/* Social Media Links */
+.social-links {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif; /* Use the new font */
+}
+
+.social-links .social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.3rem; /* Add font size for the icon */
+    color: #333; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.social-links .social-icon:hover {
+    color: #665f5f; /* Change color on hover to match the theme */
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links .social-icon:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-submit {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #665f5f; /* Match navbar color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
